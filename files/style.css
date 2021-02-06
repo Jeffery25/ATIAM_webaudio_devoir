@@ -5,3 +5,10 @@ header { text-align: center }
     margin-right: auto;
     width: 200px;
 }
+tone-play-toggle {
+	margin-bottom: 10px;
+}
+tone-slider {
+	display: block;
+	width: 100%;
+}
