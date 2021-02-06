@@ -4,9 +4,8 @@
         <title>Beat Maker</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="files/style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.76/Tone.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/PiethonCoder/wave.js/wave.js"></script>
     </head>
 
     <body>
@@ -21,7 +20,7 @@
         <canvas id="canvas" width="512" height="256"></canvas>
 
         <section id="controls">
-            <input type="button" id="play" value="Start" />
+            <button type="button" id="player">Play</button>
             <br />
             <input
                 type="range"
@@ -74,5 +73,23 @@
 
             <label for="space">space</label>
         </section>
+
+        <script>
+            // player button 
+            const player = document.getElementById("player");
+            player.addEventListener("click", updatePlayer);
+            const osc = new Tone.Oscillator(440, "sine").toDestination()
+            function updatePlayer() {
+                if (player.textContent === "Play") {
+                    player.textContent = "Stop";
+                    osc.start();
+                } else {
+                    player.textContent = "Play"
+                    osc.stop();
+                }
+            }
+
+            // volume control
+        </script>
     </body>
 </html>
