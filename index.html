@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="files/style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.76/Tone.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet"/>
+        <script src="./files/from_tonejs/tone-ui.js"></script>
+        <script src="./files/from_tonejs/components.js"></script>
     </head>
 
     <body>
@@ -74,6 +78,11 @@
             <label for="space">space</label>
         </section>
 
+        <div id="content">
+            <tone-play-toggle></tone-play-toggle>
+            <tone-slider label="Modulation Rate" min="0.1" max="1" exp="2" value="0.5"></tone-slider>
+        </div>
+
         <script>
             // player button 
             const player = document.getElementById("player");
@@ -91,5 +100,8 @@
 
             // volume control
         </script>
+
+        <script src="files/modulator.js"></script>
+
     </body>
 </html>
