@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="files/style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.76/Tone.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
 
         <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet"/>
         <script src="./files/from_tonejs/tone-ui.js"></script>
@@ -20,8 +21,6 @@
                 eiusm
             </p>
         </header>
-
-        <canvas id="canvas" width="512" height="256"></canvas>
 
         <section id="controls">
             <button type="button" id="player">Play</button>
@@ -87,30 +86,9 @@
 
         </section>
 
-        <div id="content">
-            <tone-play-toggle></tone-play-toggle>
-            <tone-slider id="modulate" label="Modulation Rate" min="0" max="1" exp="2" value="0.5"></tone-slider>
-        </div>
+        <div id="oscilloscope"></div>
 
-        <script>
-            // player button 
-            const player = document.getElementById("player");
-            player.addEventListener("click", updatePlayer);
-            const osc = new Tone.Oscillator(440, "sine").toDestination()
-            function updatePlayer() {
-                if (player.textContent === "Play") {
-                    player.textContent = "Stop";
-                    osc.start();
-                } else {
-                    player.textContent = "Play"
-                    osc.stop();
-                }
-            }
-
-            // volume control
-        </script>
-
-        <script src="files/modulator.js"></script>
+        <script src="./files/modulator.js"></script>
 
     </body>
 </html>
