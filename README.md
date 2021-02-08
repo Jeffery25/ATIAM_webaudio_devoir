@@ -2,7 +2,7 @@
 
 This project was done in the context of the web audio class at ATIAM 2020-2021.
 
-It is a webpage that uses the Tone.js library to allow the user to generate the beat phenomenon. by adding two sine waves of nearby frequency. It shows a graph of the sound wave and permits the real-time change of four parameters:
+It is a webpage that uses the Tone.js library to allow the user to generate the beat phenomenon by adding two sine waves of nearby frequency. It shows a graph of the sound wave and permits the real-time change of four parameters:
 * overall volume of the sound output
 * overall frequency of the sine waves
 * frequency difference between the two sound waves
