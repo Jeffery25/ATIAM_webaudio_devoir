@@ -8,6 +8,8 @@ It is a webpage that uses the Tone.js library to allow the user to generate the 
 * frequency difference between the two sound waves
 * panning of the two sine waves, from "both in the middle" to "hard left one, hard right the other"
 
+With the help of templates and the p5.js library, the page has responsive design and can deal with window size changes with no problem.
+
 ### Sources that helped me:
 
 * Waveform Generation + slider template @ https://tonejs.github.io/examples/signal
