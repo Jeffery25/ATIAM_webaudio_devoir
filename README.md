@@ -1,4 +1,4 @@
-# ATIAM_webaudio_devoir
+# Devoir Webaudio ATIAM 2020-2021
 
 This project was done in the context of the web audio class at ATIAM 2020-2021.
 
